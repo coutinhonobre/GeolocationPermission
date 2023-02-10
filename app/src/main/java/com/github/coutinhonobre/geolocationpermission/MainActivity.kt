@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             if (ActivityCompat.shouldShowRequestPermissionRationale(
                     this,
                     Manifest.permission.ACCESS_FINE_LOCATION
-                )
+                ).not()
             ) {
                 locationPermissionDeniedCount++
                 if (locationPermissionDeniedCount >= 3) {
